@@ -17,4 +17,4 @@ Fully functional wallet system for managing funds.
 
 Integration with order payments for a smooth checkout experience.
 
-View project: https://timely-starburst-635e52.netlify.app/
+View project: (https://sssiddzz.github.io/E-Commerce-website/)
