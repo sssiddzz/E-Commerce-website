@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon pay</title>
+  <link rel="icon" type="image/svg+xml" href="images/amazon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">amazon pay</div>
+    <nav>
+      <ul>
+          <!-- Profile Icon -->
+          <li><a>
+            <img src="images/profile-icon.png" alt="Profile" class="profile-icon" />
+          </a></li>
+          <li>MY PROFILE</li>
+
+        </ul>    
+
+    </nav>
+  </header>
+  <!-- Wallet section -->
+  <div class="wallet-container">
+    <header class="wallet-header">
+      <h1>Amazon Pay Wallet</h1>
+    </header>
+
+    <!-- Wallet Balance Section -->
+    <section class="wallet-balance">
+      <h2>Wallet Balance</h2>
+      <p id="balance-amount" class="balance-amount">₹ 2,500.00</p>
+      <div class="wallet-actions">
+        <button id="add-money-btn" class="btn add-money">Add Money</button>
+        <button class="btn pay-now">Pay</button>
+      </div>
+    </section>
+
+    <!-- Transaction History Section -->
+    <section class="transaction-history">
+      <h2>Transaction History</h2>
+      <ul id="transaction-list" class="transactions">
+        <li>
+          <span>Initial Balance</span>
+          <span>₹ 2,500.00</span>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <!--  Money Modal -->
+  <div id="add-money-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Add Money</h2>
+      <input type="number" id="add-amount" placeholder="Enter amount" min="1">
+      <div class="modal-actions">
+        <button id="confirm-add" class="btn add-money">Add</button>
+        <button id="cancel-add" class="btn cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+<script src="script.js"></script>
+</html>

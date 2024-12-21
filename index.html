@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="images/amazon.png">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">amazon</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="wallet-button"><a href="#cart-container">CART</a></li></button>
+        <li>
+          <!-- Wallet Button -->
+          <button class="wallet-button"><a href="wallet.html" target="_blank">WALLET</a></button>
+        </li>
+        <li>
+          <!-- Search Bar -->
+          <input type="text" class="search-bar" placeholder="Search products..." />
+        </li>
+        <li>
+          <!-- Profile Icon -->
+          <a href="#profile">
+            <img src="images/profile-icon.png" alt="Profile" class="profile-icon" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Product Section -->
+  <section id="products" class="product-container">
+    <h1>Our Products</h1>
+    <div class="products">
+      <!-- Product List -->
+      <div class="product" data-id="1" data-name="Laptop" data-price="55000">
+        <img src="images/laptop.png" alt="Laptop">
+        <h2>Laptop</h2>
+        <p>₹55,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-text">(4.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="2" data-name="Smartphone" data-price="45000">
+        <img src="images/mobile.png" alt="Smartphone">
+        <h2>Smartphone</h2>
+        <p>₹45,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="rating-text">(5.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="3" data-name="Headphones" data-price="2000">
+        <img src="images/headphones.png" alt="Headphones">
+        <h2>Headphones</h2>
+        <p>₹2,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-text">(4.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="4" data-name="Tablet" data-price="25000">
+        <img src="images/tablet.png" alt="Tablet">
+        <h2>Tablet</h2>
+        <p>₹25,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+          <span class="rating-text">(3.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="5" data-name="Smartwatch" data-price="12000">
+        <img src="images/smartwatch.png" alt="Smartwatch">
+        <h2>Smartwatch</h2>
+        <p>₹12,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+          <span class="rating-text">(3.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="6" data-name="Camera" data-price="40000">
+        <img src="images/camera.png" alt="Camera">
+        <h2>Camera</h2>
+        <p>₹40,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-text">(4.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="7" data-name="Bluetooth Speaker" data-price="2500">
+        <img src="images/speaker.png" alt="Bluetooth Speaker">
+        <h2>Bluetooth Speaker</h2>
+        <p>₹2,500</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+          <span class="rating-text">(3.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="8" data-name="Camera Lens" data-price="15000">
+        <img src="images/lens.png" alt="Camera Lens">
+        <h2>Camera Lens</h2>
+        <p>₹15,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-text">(4.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+
+      <div class="product" data-id="9" data-name="Smart TV" data-price="45000">
+        <img src="images/smarttv.png" alt="Smart TV">
+        <h2>Smart TV</h2>
+        <p>₹45,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="rating-text">(5.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="10" data-name="Keyboard" data-price="1200">
+        <img src="images/keyboard.png" alt="Keyboard">
+        <h2>Keyboard</h2>
+        <p>₹1,200</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-text">(4.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="11" data-name="Wireless Mouse" data-price="800">
+        <img src="images/mouse.png" alt="Wireless Mouse">
+        <h2>Wireless Mouse</h2>
+        <p>₹800</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+          <span class="rating-text">(3.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="12" data-name="Monitor" data-price="15000">
+        <img src="images/monitor.png" alt="Monitor">
+        <h2>Monitor</h2>
+        <p>₹15,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-text">(4.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="13" data-name="Gaming Console" data-price="40000">
+        <img src="images/console.png" alt="Gaming Console">
+        <h2>Gaming Console</h2>
+        <p>₹40,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-text">(4.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="14" data-name="Fitness Tracker" data-price="4000">
+        <img src="images/fitness-tracker.png" alt="Fitness Tracker">
+        <h2>Fitness Tracker</h2>
+        <p>₹4,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+          <span class="rating-text">(3.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="15" data-name="VR Headset" data-price="30000">
+        <img src="images/vr-headset.png" alt="VR Headset">
+        <h2>VR Headset</h2>
+        <p>₹30,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-text">(4.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="16" data-name="Drone" data-price="75000">
+        <img src="images/drone.png" alt="Drone">
+        <h2>Drone</h2>
+        <p>₹75,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="rating-text">(5.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+
+      <div class="product" data-id="17" data-name="Portable Charger" data-price="1500">
+        <img src="images/charger.png" alt="Portable Charger">
+        <h2>Portable Charger</h2>
+        <p>₹1,500</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-text">(4.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="18" data-name="Electric Scooter" data-price="90000">
+        <img src="images/scooter.png" alt="Electric Scooter">
+        <h2>Electric Scooter</h2>
+        <p>₹90,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="rating-text">(5.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="19" data-name="Graphic Tablet" data-price="25000">
+        <img src="images/tablet-graphic.png" alt="Graphic Tablet">
+        <h2>Graphic Tablet</h2>
+        <p>₹25,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-text">(4.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="20" data-name="Wi-Fi Router" data-price="2500">
+        <img src="images/router.png" alt="Wi-Fi Router">
+        <h2>Wi-Fi Router</h2>
+        <p>₹2,500</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+          <span class="rating-text">(3.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="21" data-name="Electric Kettle" data-price="1800">
+        <img src="images/kettle.png" alt="Electric Kettle">
+        <h2>Electric Kettle</h2>
+        <p>₹1,800</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+          <span class="rating-text">(3.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="22" data-name="Air Purifier" data-price="12000">
+        <img src="images/air-purifier.png" alt="Air Purifier">
+        <h2>Air Purifier</h2>
+        <p>₹12,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-text">(4.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="23" data-name="Smart Bulb" data-price="500">
+        <img src="images/smart-bulb.png" alt="Smart Bulb">
+        <h2>Smart Bulb</h2>
+        <p>₹500</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+          <span class="rating-text">(3.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product" data-id="24" data-name="Gaming Chair" data-price="15000">
+        <img src="images/gaming-chair.png" alt="Gaming Chair">
+        <h2>Gaming Chair</h2>
+        <p>₹15,000</p>
+        <div class="ratings">
+          <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-text">(4.0/5)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+  </section>
+
+ <!-- Cart Section -->
+ <section id="cart-container">
+  <div class="cart-box">
+    <h1>Your Cart</h1>
+    <ul class="cart-items">
+      <!-- Cart items will be dynamically appended here -->
+    </ul>
+    <div class="cart-total">
+      <strong>Total: ₹<span id="total-price">0.00</span></strong>
+    </div>
+    
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h1>About Us</h1>
+    <p>
+      Welcome to our E-Commerce website! At <strong>amazon</strong>, we aim to provide you with the best online shopping experience. 
+      Browse through a wide range of quality products, from electronics to daily essentials. 
+    </p>
+    <p>
+      Our mission is to offer affordable prices, excellent customer service, and a seamless shopping experience.
+      We believe that shopping online should be easy, convenient, and enjoyable.
+    </p>
+    <p>
+      Whether you're looking for the latest tech gadgets or everyday products, we've got you covered. 
+      Join our growing community of satisfied customers and discover why <strong>amazon</strong> is your go-to destination for online shopping.
+    </p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-container">
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+      <a href="#cart">Cart</a>
+    </div>
+    <div class="footer-info">
+      <p>&copy; 2024 Amazon. All rights reserved.</p>
+      <p>Privacy Policy | Terms of Service</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
